@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta name="description" content="ติดต่อ นาย นพดล คล้ายพันธ์">
+ <title>ติดต่อ - นาย นพดล คล้ายพันธ์</title>
+<link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+ <!-- Header และ nav -->
+    <header>
+    <nav>
+      <div class="logo">
+        <h1>นาย นพดล คล้ายพันธ์</h1>
+      </div>
+      <ul>
+        <li><a href="index.html">หน้าหลัก</a></li>
+        <li><a href="about.html">เกี่ยวกับ</a></li>
+        <li><a href="projects.html">ผลงาน</a></li>
+        <li><a href="contact.html">ติดต่อ</a></li>
+      </ul>
+    </nav>
+  </header>
+ <main>
+ <section class="contact-intro">
+ <h1>ติดต่อผม</h1>
+ <p>
+ หากคุณสนใจติดต่อเพื่อพูดคุยเกี่ยวกับโปรเจกต์หรือโอกาสทำงาน 
+ กรุณากรอกฟอร์มด้านล่างหรือติดต่อผ่านช่องทางอื่นๆ
+ </p>
+ </section>
+
+ <section class="contact-form-section">
+ <h2>ส่งข้อความถึงผม</h2>
+ <form action="#" method="POST" id="contact-form">
+ <div class="form-group">
+ <label for="name">ชื่อ - นามสกุล <span class="required">*</span></label>
+ <input type="text" 
+ id="name" 
+ name="name" 
+ required 
+ placeholder="กรอกชื่อของคุณ" 
+ aria-required="true">
+ </div>
+
+ <div class="form-group">
+ <label for="email">อีเมล <span class="required">*</span></label>
+ <input type="email" 
+ id="email" 
+ name="email" 
+ required 
+ placeholder="your.email@example.com" 
+ aria-required="true">
+ </div>
+
+ <div class="form-group">
+ <label for="phone">เบอร์โทรศัพท์</label>
+ <input type="tel" 
+ id="phone" 
+ name="phone" 
+ placeholder="0X-XXXX-XXXX" 
+ pattern="[0-9]{2}-[0-9]{4}-[0-9]{4}" 
+ title="รูปแบบ: 0X-XXXX-XXXX">
+ <small>รูปแบบ: 0X-XXXX-XXXX (ไม่บังคับ)</small>
+ </div>
+
+ <div class="form-group">
+ <label for="subject">หัวข้อ <span class="required">*</span></label>
+ <select id="subject" name="subject" required aria-required="true">
+ <option value="">-- เลือกหัวข้อ --</option>
+ <option value="project">สนใจทำโปรเจกต์ร่วมกัน</option>
+ <option value="job">โอกาสทำงาน</option>
+ <option value="question">สอบถามข้อมูล</option>
+ <option value="other">อื่นๆ</option>
+ </select>
+ </div>
+
+ <div class="form-group">
+ <label for="message">ข้อความ <span class="required">*</span></label>
+ <textarea id="message" 
+ name="message" 
+ rows="6" 
+ required 
+ placeholder="เขียนข้อความของคุณที่นี่..." 
+ aria-required="true"></textarea>
+ </div>
+
+ <div class="form-group">
+ <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+ <label for="newsletter">
+ สมัครรับข่าวสารและอัพเดทผลงานใหม่ๆ
+ </label>
+ </div>
+
+ <div class="form-actions">
+ <button type="submit">ส่งข้อความ</button>
+ <button type="reset">ล้างฟอร์ม</button>
+ </div>
+ </form>
+ </section>
+
+ <section class="contact-info">
+ <h2>ช่องทางการติดต่ออื่นๆ</h2>
+ <address>
+ <p>
+ <strong>Email:</strong> 
+ <a href="mailto:nobpadon.klaypan@gmail.com">nobpadon.klaypan@gmail.com</a>
+ </p>
+ <p>
+ <strong>GitHub:</strong> 
+ <a href="https://github.com/AzumuOwl/" 
+ target="_blank" 
+ rel="noopener noreferrer">
+ @AzumuOwl
+ </a>
+ </p>
+ <p>
+ <strong>LinkedIn:</strong> 
+ <a href="https://linkedin.com/in/yourusername" 
+ target="_blank" 
+ rel="noopener noreferrer">
+ linkedin.com/in/yourusername
+ </a>
+ </p>
+ </address>
+ </section>
+ </main>
+ <!-- Footer -->
+</body>
+</html>
