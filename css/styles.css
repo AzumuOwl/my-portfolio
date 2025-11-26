@@ -1,0 +1,505 @@
+/* ฟอนต์ */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans Thai", sans-serif;
+}
+
+body {
+  background: #F8FFFF;
+  color: #222;
+}
+
+/* ---------- NAVBAR ---------- */
+header {
+  background: #ffffffcc;
+  backdrop-filter: blur(10px);
+  border-bottom: 2px solid #C0F3FF;
+}
+
+nav {
+  max-width: 1100px;
+  margin: auto;
+  padding: 15px 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .logo h1 {
+  color: #00E5FF;
+  font-weight: 700;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #222;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #00E5FF;
+}
+
+/* ---------- HERO SECTION ---------- */
+
+.hero {
+  max-width: 1200px;
+  margin: auto;
+  padding: 60px 20px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.hero-content h2 {
+  font-size: 2.5rem;
+  color: #00C8E8;
+}
+
+.hero-content p {
+  margin: 10px 0 20px;
+  line-height: 1.7;
+}
+
+.cta-button {
+  background: #00E5FF;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.cta-button:hover {
+  background: #00cbe0;
+  transform: translateY(-3px);
+}
+
+.hero-image img {
+  width: 300px;
+  border-radius: 20px;
+  box-shadow: 0px 8px 20px rgba(0, 229, 255, 0.3);
+  border: 3px solid #C0F3FF;
+}
+
+/* ---------- SKILLS SECTION ---------- */
+
+.skills-preview {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.skills-preview h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #00C8E8;
+}
+
+.skills-grid {
+  max-width: 1000px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.skill-card {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  border: 2px solid #C0F3FF;
+  box-shadow: 0px 4px 12px rgba(0, 229, 255, 0.15);
+  transition: 0.3s;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 18px rgba(0, 229, 255, 0.25);
+}
+
+.skill-card h3 {
+  color: #00C8E8;
+  margin-bottom: 10px;
+}
+
+/* ---------- FOOTER ---------- */
+
+footer {
+  margin-top: 40px;
+  background: #ffffffaa;
+  backdrop-filter: blur(10px);
+  padding: 30px;
+  border-top: 2px solid #C0F3FF;
+}
+
+.footer-content {
+  text-align: center;
+}
+
+.footer-content p {
+  margin-bottom: 10px;
+}
+
+.social-links a {
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #00C8E8;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
+
+/* ------------------------------
+   Projects Page (ผลงาน)
+------------------------------ */
+
+main {
+  max-width: 1000px;
+  margin: auto;
+  padding: 30px 20px;
+}
+
+main h1 {
+  text-align: center;
+  color: #00C8E8;
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+/* ----- Project Grid ----- */
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 25px;
+}
+
+/* ----- Project Card ----- */
+
+.project-card {
+  background: white;
+  border: 1.5px solid #D6F8FF;  /* ฟ้าอ่อน */
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.project-card figure {
+  margin: 0;
+  text-align: center;
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 1.5px solid #D6F8FF;
+}
+
+.project-card figcaption {
+  padding-top: 5px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* ----- Project Info ----- */
+
+.project-info {
+  margin-top: 15px;
+}
+
+.project-info h2 {
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+  color: #00B2CC;
+}
+
+.project-info p {
+  margin-bottom: 8px;
+  line-height: 1.5;
+  color: #333;
+}
+
+/* ----- Links ----- */
+
+.project-links {
+  margin-top: 10px;
+}
+
+.project-links a {
+  display: inline-block;
+  margin-right: 12px;
+  padding: 6px 12px;
+  background: #00C8E8;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+.project-links a:hover {
+  background: #00B2CC;
+}
+
+/* ------------------------------
+   Contact Page (ติดต่อ)
+------------------------------ */
+
+/* Layout Main */
+main {
+  max-width: 900px;
+  margin: auto;
+  padding: 30px 20px;
+}
+
+/* ---------- Intro ---------- */
+.contact-intro {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.contact-intro h1 {
+  color: #00C8E8;
+  margin-bottom: 10px;
+}
+
+.contact-intro p {
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ---------- Form Section ---------- */
+.contact-form-section h2 {
+  color: #00B2CC;
+  margin-bottom: 15px;
+}
+
+form {
+  background: #FFFFFF;
+  padding: 20px 20px 25px;
+  border: 1.5px solid #D6F8FF;
+  border-radius: 10px;
+}
+
+/* Form Group */
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.required {
+  color: red;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1.5px solid #CDEFF6;
+  border-radius: 6px;
+  outline: none;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: #00C8E8;
+}
+
+/* Placeholder style */
+input::placeholder,
+textarea::placeholder {
+  color: #999;
+}
+
+/* Small text */
+.form-group small {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+/* Checkbox */
+.form-group input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+/* ---------- Form Buttons ---------- */
+.form-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.form-actions button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  background: #00C8E8;
+  color: white;
+  cursor: pointer;
+}
+
+.form-actions button:hover {
+  background: #00AFCB;
+}
+
+/* Reset Button */
+.form-actions button[type="reset"] {
+  background: #E0F7FF;
+  color: #333;
+}
+
+.form-actions button[type="reset"]:hover {
+  background: #C8EEF7;
+}
+
+/* ---------- Contact Info ---------- */
+.contact-info {
+  margin-top: 40px;
+}
+
+.contact-info h2 {
+  color: #00B2CC;
+  margin-bottom: 10px;
+}
+
+.contact-info address p {
+  margin: 8px 0;
+  color: #333;
+}
+
+.contact-info a {
+  color: #00AFCB;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+
+/* -----------------------------------
+   About Page (หน้าแนะนำตัว)
+----------------------------------- */
+
+main {
+  max-width: 900px;
+  margin: auto;
+  padding: 30px 20px;
+}
+
+/* ---- Section Title ---- */
+.about-intro h1,
+.education h2,
+.skills h2,
+.skills-table h2 {
+  color: #00C8E8;
+  margin-bottom: 10px;
+}
+
+/* ---- Intro ---- */
+.about-intro p {
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+/* ---- Education ---- */
+.education-item {
+  border-left: 4px solid #00C8E8;
+  padding-left: 15px;
+  margin-bottom: 20px;
+}
+
+.education-item h3 {
+  margin: 0;
+  color: #00AFCB;
+}
+
+.education-item p {
+  margin: 5px 0;
+  color: #444;
+}
+
+/* ---- Skills Section ---- */
+.skill-category {
+  margin-bottom: 20px;
+  background: #FFFFFF;
+  padding: 15px;
+  border: 1.5px solid #D6F8FF;
+  border-radius: 10px;
+}
+
+.skill-category h3 {
+  margin-bottom: 10px;
+  color: #00AFCB;
+}
+
+.skill-category ul li {
+  margin: 6px 0;
+  color: #333;
+}
+
+/* ---- Skills Table ---- */
+.skills-table table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  margin-top: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1.5px solid #D6F8FF;
+}
+
+.skills-table caption {
+  padding: 10px;
+  font-weight: bold;
+  color: #00AFCB;
+}
+
+.skills-table th,
+.skills-table td {
+  border: 1px solid #CDEFF6;
+  padding: 10px;
+  text-align: left;
+}
+
+.skills-table thead {
+  background: #E9FBFF;
+}
+
+.skills-table tbody tr:nth-child(even) {
+  background: #F7FEFF;
+}
+
+.skills-table tfoot td {
+  background: #F0FCFF;
+  text-align: center;
+  padding: 8px;
+  font-size: 0.85rem;
+  color: #555;
+}
