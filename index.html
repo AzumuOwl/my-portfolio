@@ -1,29 +1,85 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - นาย นพดล คล้ายพันธ์</title>
+  <link rel="stylesheet" href="CSS/styles.css">
 </head>
+
 <body>
-    <h1>Welcome to My Portfolio</h1>
-    <p>I am a web developer specializing in modern technologies.</p>
-    
-    <!-- About section -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I am a passionate web developer learning modern technologies.</p>
+  <header>
+    <nav>
+      <div class="logo">
+        <h1>นาย นพดล คล้ายพันธ์</h1>
+      </div>
+      <ul>
+        <li><a href="index.html">หน้าหลัก</a></li>
+        <li><a href="about.html">เกี่ยวกับ</a></li>
+        <li><a href="projects.html">ผลงาน</a></li>
+        <li><a href="contact.html">ติดต่อ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <h2>สวัสดีครับผม <br> นาย นพดล คล้ายพันธ์</h2>
+        <p>ช่างไฟ | Programmer | Network engineering</p>
+        <p>
+          ยินดีต้อนรับสู่ portfolio ของผม ที่นี่คุณจะพบผลงานและประสบการณ์ต่างๆ ของผม
+        </p>
+        <a href="projects.html" class="cta-button">ดูผลงาน</a>
+      </div>
+
+      <div class="hero-image">
+        <img src="images/my.jpg" alt="รูปโปรไฟล์ของ นาย นพดล คล้ายพันธ์">
+      </div>
     </section>
-    
-    <!-- Contact form -->
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
+
+    <section class="skills-preview">
+      <h2>ทักษะหลัก</h2>
+      <div class="skills-grid">
+        <article class="skill-card">
+          <h3>Programming</h3>
+          <p>Python, C#, Java, C, C++</p>
+        </article>
+
+        <article class="skill-card">
+          <h3>Web Development</h3>
+          <p>HTML, CSS</p>
+        </article>
+
+        <article class="skill-card">
+          <h3>Tools</h3>
+          <p>Git, VS Code, Terminal, Putty</p>
+        </article>
+
+        <article class="skill-card">
+          <h3>Network & OS</h3>
+          <p>Cisco , Ubantu</p>
+        </article>
+
+        <article class="skill-card">
+          <h3>อื่นๆ</h3>
+          <p>ไฟ[พื้นฐาน] , ซ้อมอุปกรณ์อิเล็กทรอนิกส์[เบื้องต้น] , ก่อสร้าง[พื้นฐาน]</p>
+        </article>    
+
+      </div>
     </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 นาย นพดล คล้ายพันธ์. All rights reserved.</p>
+      <div class="social-links">
+        <a href="https://github.com/AzumuOwl" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="nobpadon.klaypan@gmail.com">Email</a>
+      </div>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+
 </body>
 </html>
